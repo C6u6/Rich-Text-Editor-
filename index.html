@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An online Rich-Text editor that allows you to format pretty looking and organized texts.">
+    <link rel="stylesheet" href="style.css">
+    <title>Editor Rich-Text</title>
+</head>
+<body onmouseover="focusOutOfSelect()">
+    
+    <main>
+
+            <section class="interactive-buttons">
+
+            <select name="fontType" class="selects" id="font-type" onfocusout="FontType()">
+                <option value="serif">Serif</option>
+                <option value="sans-serif">Sans Serif</option>
+            </select>
+
+            <select name="textSize" class="selects" id="text-size" onfocusout="FontSize()">
+                <option value="normal">Normal</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+            </select>
+
+            <input type="checkbox" name="" class="checkbox-input" id="input-1" onclick="bold()"> <label for="input-1"> <img src="./images/boldsymbol.png" alt="bold symbol"></label>
+            <input type="checkbox" name="" class="checkbox-input" id="input-2" onclick="italic()"> <label for="input-2"> <img src="./images/italicsymbol.png" alt="italic symbol"></label>
+            <input type="checkbox" name="" class="checkbox-input" id="input-3" onclick="underline()"> <label for="input-3"> <img src="./images/underlinesymbol.png" alt="inderline symbol"></label>
+            <input type="checkbox" name="" class="checkbox-input" id="input-4" onclick="strickthrough()"> <label for="input-4"> <img src="./images/strickthrough.png" alt="strickthrough symbol"></label>
+
+        </section class="interactive-buttons">
+
+        <div id="textarea" contenteditable>Write something here!</div>
+
+    </main>
+    <script src="functionalaties.js"></script>
+</body>
+</html>
